@@ -3,7 +3,7 @@
 function checkAnswer() {
     const correctAnswer = 4;
     let userAnswer = parseInt(document.querySelector('input[name="quiz"]:checked').value, 10);
-    let feedBack = document.querySelector('#feedback');
+    let feedBack = document.getElementById('feedback');
 
     if(userAnswer === correctAnswer) {
         feedBack.textContent = "Correct! Well done.";
